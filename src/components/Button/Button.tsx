@@ -1,12 +1,13 @@
 import React from 'react';
 
 interface ButtonProps {
-    label: string
+    label: string;
+    onClick?: () => void;
 }
 
 const Button = (props: ButtonProps) => {
     return (
-        <button>{props.label}</button>
+        <button onClick={props.onClick}>{props.label}</button>
     )
 }
 
